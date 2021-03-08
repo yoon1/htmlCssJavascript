@@ -1,0 +1,51 @@
+body {
+    /* background-color: tomato; */
+}
+
+ul {
+    padding: 0;
+}
+
+ul > li {
+    position: absolute;
+    left: -50px;
+    display: table;
+    width: 100%;
+    user-select: none;
+}
+
+ul > li .listview__item {
+    overflow: initial;   
+    margin-right: 0;
+    transition: transform 400ms;
+}
+
+ul > li span {
+    z-index: auto;
+    box-sizing: border-box;
+    height: 50px;
+    display: table-cell;
+    float: left;
+    /* transition : width 3080ms ease-out; */
+    transition: width 100ms ease-out;
+}
+
+ul > li span .show {
+    width: 70px;
+    cursor: pointer;   
+}
+
+ul > li p .btn {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    text-shadow: none;
+    color: white;
+    text-rendering: optimizeLegibility;
+    text-overflow: clip;
+}
+
+ul > li span.memo {
+    background-color: teal;
+    width: 50px;
+}
