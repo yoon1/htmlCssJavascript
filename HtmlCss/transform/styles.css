@@ -1,0 +1,55 @@
+a {
+    color: wheat;
+    background-color: tomato;
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    transition: all 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+a:hover {
+    color: tomato;
+    background-color: wheat;
+}
+
+
+.square {
+    margin: 50px;
+    border: 15px solid goldenrod;
+    background-color: darkorchid;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    /* transform: rotateY(45deg) rotateX(20deg) rotateZ(30deg); */
+    /* transform: skewX(45deg); */
+    /* transition: transform 2s ease-in-out; */
+    animation: squareAnimation 5s ease-in-out infinite;
+}
+
+/* .square:hover {
+    transform: rotateY(360deg) scale(0.5);
+} */
+
+.mini {
+    width: 180px;
+    height: 180px;
+    background-color: tomato;
+    border: 5px solid greenyellow;
+}
+
+@keyframes squareAnimation {
+    0% {
+        transform: rotateX(0);
+    }
+
+    50% {
+        transform: rotateX(180deg) translateY(100px);
+    }
+
+    100% {
+        transform:  translateY(0px);
+    }
+}
+
