@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Share+Tech&display=swap');
+
+body {
+    vertical-align: middle;
+    border : 5px solid turquoise;
+    padding: 70px 30px 30px 30px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+header {
+    display: flex;
+    justify-content: first baseline;
+    height: 25px;
+    position: relative;
+    font-weight: 900;
+}
+
+.header__btn-exit {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+.header__title {
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+}
+
+.play-focus {
+    margin: 40px 0;
+}
+
+.play-focus__info {
+    display: flex;
+    height: 145px;
+}
+
+.play-focus__img {
+    width: 140px;
+    height: 140px;
+    background-color: orange;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.play-focus__detail {
+    margin-left: 25px;
+}
+
+.play-focus__title {
+    font-size: 35px;
+}
+
+.play-focus__title p {
+    margin:10px 0;
+}
+
+.play-focus__composer {
+    font-weight: 700;
+}
+
+.play-focus__wrap-btn {
+    height: 70px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-focus__btn {
+    box-shadow: 0px 5px black;
+    height: 65px;
+    border: 2px solid black;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.play-focus__btn-img{
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.play-focus__wrap-btn .square {
+    width: 175px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+
+.play-focus__wrap-btn .circle {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.play-list {
+    height: 405px;
+}
+
+.play-list__item {
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+
+.play-list__item-square {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.play-list__item .tomato{
+    background-color: tomato;
+}
+
+.play-list__item .lightpink{
+    background-color: lightpink;
+}
+
+.play-list__item .dodgerblue{
+    background-color: dodgerblue;
+}
+
+.play-list__item .turquoise{
+    background-color: turquoise;
+}
+
+.play-list__item-info{
+    margin: 2px 15px;
+}
+
+.play-list__item-title {
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.play-list__item-composer {
+    font-size: 15px;
+    font-family: 'Share Tech', sans-serif;
+    color: gray;
+}
