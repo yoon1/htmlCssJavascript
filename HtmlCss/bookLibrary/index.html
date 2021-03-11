@@ -4,110 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 9</title>
+    <title>Assignment 10</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="top-nav"> <!-- size 130-->
-            <div class="top-nav__list icon"></div>
-            <div class="top-nav__title"></div>
-            <div class="top-nav__cart icon"></div>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search books">
-            <icon></icon>
-        </div>
-    </header>
-    <main div="contents">
-        <div class="contents-wrap">
-            <div class="contents-title">
-                Book of the day
-            </div>
-            <div class="contents-book">
-                <img>
-                <div class="book__details">
-                    <div class="book__title"></div>
-                    <div class="book__author"></div>
-                    <div class="book__scope">
-                        <img class="adventures__star-img active">
-                        <img class="adventures__star-img active">
-                        <img class="adventures__star-img active">
-                        <img class="adventures__star-img active">
-                        <img class="adventures__star-img">                        
-                    </div>
-                    <div class="book__tag-box">
-                        <div class="book__tag">
-                        </div>
-                        <div class="book__tag">
-                        </div>
-                    </div>
-                    <div class="book__favorite-btn"></div>
-                    <div class="book__go-btn"></div>
+    <body>
+        <header>
+            <div class="top-nav"> <!-- size 130-->
+                <div class="top-nav__list icon">
+                    <i class="fas fa-bars fa-lg"></i>
+                </div>
+                <div class="top-nav__title">
+                    library
+                </div>
+                <div class="top-nav__cart icon">
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
             </div>
-        </div>
-        <div class="contents-wrap">
-            <div class="contents-title">
-                Top Adventures
+            <div class="search-wrapper">
+                <input class="search-bar" type="text" placeholder="Search books...">
+                <i class="fas fa-search"></i>
             </div>
-            <div class="contents-adventures">
-                <ul class="adventures__list">
-                    <li class="adventures__item">
-                        <img class="adventures__img">
-                        <div class="adventures__scope">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img">
+        </header>
+        <main div="contents">
+            <div class="contents-wrap">
+                <div class="contents-title">
+                    Book of the day
+                </div>
+                <div class="contents-book">
+                    <div class="contents-book__img square"></div>
+                    <div class="book__details">
+                        <div class="book__title">
+                            No Fixed Abode
                         </div>
-                    </li>
-                    <li class="adventures__item">
-                        <img class="adventures__img">
-                        <div class="adventures__scope">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img">
+                        <div class="book__author">
+                            Journey Through
                         </div>
-                    </li>
-                    <li class="adventures__item">
-                        <img class="adventures__img">
-                        <div class="adventures__scope">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img">
+                        <div class="book__scope">
+                            <i class="fas fa-star star-active"></i>
+                            <i class="fas fa-star star-active"></i>
+                            <i class="fas fa-star star-active"></i>
+                            <i class="fas fa-star star-active"></i>
+                            <i class="fas fa-star star-disactive"></i>
                         </div>
-                    </li>
-                    <li class="adventures__item">
-                        <img class="adventures__img">
-                        <div class="adventures__scope">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img active">
-                            <img class="adventures__star-img">
+                        <div class="book__tag-box">
+                            <div class="book__tag">
+                                Journey
+                            </div>
+                            <div class="book__tag">
+                                Biography
+                            </div>
                         </div>
-                    </li>                                                            
-                </ul>
+                        <div class="book__act-btn">
+                            <div class="book__favorite-btn">
+                                <i class="fas fa-bookmark"></i>
+                            </div>
+                            <div class="book__go-btn">
+                                Book Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="contents__wrap">
-            <div class="contents__title">
-                Popular authors
+            <div class="contents-wrap">
+                <div class="contents-title">
+                    Top Adventures
+                </div>
+                <div class="contents-adventures">
+                    <ul class="adventures__list">
+                        <li class="adventures__item">
+                            <div class="adventures__img square"></div>
+                            <div class="adventures__scope">
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-disactive"></i>
+                            </div>
+                        </li>
+                        <li class="adventures__item">
+                            <div class="adventures__img square"></div>
+                            <div class="adventures__scope">
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-disactive"></i>
+                            </div>
+                        </li>
+                        <li class="adventures__item">
+                            <div class="adventures__img square"></div>
+                            <div class="adventures__scope">
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-disactive"></i>                            
+                            </div>
+                        </li>
+                        <li class="adventures__item">
+                            <div class="adventures__img square"></div>
+                            <div class="adventures__scope">
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-disactive"></i>
+                            </div>
+                        </li>     
+                        <li class="adventures__item">
+                            <div class="adventures__img square"></div>
+                            <div class="adventures__scope">
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-active"></i>
+                                <i class="fas fa-xs fa-star star-disactive"></i>
+                            </div>
+                        </li>                                                            
+                    </ul>
+                </div>
             </div>
-            <div class="contents__authors">
-                <img class="authors__img">
-                <div class="authors__info">
-                    <div class="authors__title"></div>
-                    <div class="authors__detail"></div>
-                </ddiv>
-            </div>
-        </div>        
-    </main>
-</body>
+            <div class="contents-wrap">
+                <div class="contents-title">
+                    Popular authors
+                </div>
+                <div class="contents__authors">
+                    <div class="authors__img square"></div>
+                    <div class="authors__info">
+                        <div class="authors__title">
+                            <p>George Raymond</p>
+                            <p>Richar Martin</p>
+                        </div>
+                        <div class="authors__detail">
+                            <p>Moden American Science fiction writer, screenwriter, producer and editor, winner of many literary awards.</p>
+                        </div>
+                    </ddiv>
+                </div>
+            </div>        
+        </main>
+        <script src="https://kit.fontawesome.com/1ed6f0995b.js" crossorigin="anonymous"></script>
+    </body>
 </html>

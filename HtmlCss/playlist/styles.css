@@ -46,7 +46,22 @@ header {
     background-color: orange;
     border-radius: 15px;
     border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.play-focuss__img svg {
+    width: 24px;
+    height: 24px;
+    fill:#fff;
+}
+/* 
+.play-focus__img img{
+    width: 50px;
+    height: 50px;
+} */
+
 .play-focus__detail {
     margin-left: 25px;
 }
