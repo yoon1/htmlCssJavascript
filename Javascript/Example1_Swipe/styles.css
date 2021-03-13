@@ -7,11 +7,12 @@ ul {
 }
 
 ul > li {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     left: -50px;
-    display: table;
-    width: 100%;
-    user-select: none;
+    /* display: table; */
+    /* width: 100%; */
+    /* user-select: none; */
 }
 
 ul > li .listview__item {
@@ -21,28 +22,29 @@ ul > li .listview__item {
 }
 
 ul > li span {
-    z-index: auto;
-    box-sizing: border-box;
-    height: 50px;
-    display: table-cell;
+    /* z-index: auto; */
+    /* box-sizing: border-box; */
+    /* height: 50px; */
+    /* display: table-cell; */
     float: left;
+    /* flex-direction: column; */
     /* transition : width 3080ms ease-out; */
-    transition: width 100ms ease-out;
+    /* transition: width 100ms ease-out; */
 }
 
 ul > li span .show {
-    width: 70px;
-    cursor: pointer;   
+    /* width: 70px;
+    cursor: pointer;    */
 }
 
 ul > li p .btn {
-    text-align: center;
+    /* text-align: center;
     vertical-align: middle;
     font-size: 1em;
     text-shadow: none;
     color: white;
-    text-rendering: optimizeLegibility;
-    text-overflow: clip;
+    text-rendering: optimizeLegibility; */
+    /* text-overflow: clip; */
 }
 
 ul > li span.memo {

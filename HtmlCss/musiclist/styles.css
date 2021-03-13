@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+
+
+/* common */
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.screen {
+    height: 580px;
+    width: 270px;
+    background-color: white;
+    margin: 50px;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.screen__top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shadow {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-component {
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.2);
+}
+
+.shadow-component-large {
+    box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.3);
+}
+
+/* screen 1 */
+.screen__musician {
+    text-align: center;
+    padding: 10px;
+}
+
+.screen__musician .musician__img {
+    margin: 10px auto 20px auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: orangered;
+}
+
+.screen__musician .musician__name {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.screen__musician .musician__genre {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.screen__musician .musician__btn-box {
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen__musician .musician__btn-shuffle, 
+.screen__musician .musician__btn-like {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.screen__musician .musician__btn-shuffle {
+    background-color: black;
+    color: #fff;
+}
+
+.screen__musician .musician__btn-like {
+    background-color: #fff;
+    color: black;
+}
+
+.screen__musiclist ul{
+    padding: 0px;
+    margin: 0;
+}
+
+.screen__musiclist ul > li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+.screen__musiclist ul .active{
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.1);
+}
+
+.musiclist__cover {
+    display: flex;
+    justify-content: space-between;
+}
+
+.musiclist__cover-img{
+    width: 38px;
+    height: 38px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.musiclist__cover-img{
+    width: 38px;
+    height: 38px;
+    /* background-color: pink; */
+    border-radius: 5px;
+}
+
+.musiclist__cover-detail {
+    padding: 0 10px;
+}
+
+.musiclist__cover-musician {
+    font-size: 12px;
+}
+
+.musiclist__cover-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.screen__playlist-simple {
+    height: 40px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 22px; 
+}
+
+.playlist-simple__musican {
+    color: lightgray;
+    font-size: 12px;    
+}
+
+.playlist-simple__title {
+    color: white;
+    font-size: 14px;
+}
+
+.playlist-simple__btn {
+    color: #fff;
+    line-height: 40px;
+}
+
+.playlist-simple__btn i {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.playlist-simple__btn .playlist-simple__stop {
+    font-size: 16px;
+}
+
+
+/* screen 2 */
+.screen__music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music__cover-img {
+    margin: 50px 20px ;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: orangered; 
+}
+
+.music__title {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.music__musician {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.screen__play-bar {
+
+}
+
+.play-bar__time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-bar__time p{
+    font-size: 10px;
+    color: lightgray;
+}
+
+.play-bar__input {
+    width: 100%;
+    background-color: black;
+    /* border: 5px solid black; */
+}
+
+.play-bar__input:focus {
+    outline: none;
+}
+
+.screen__playlist {
+}
+
+.screen__playlist-icon-box {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen__playlist-icon-box i {
+    font-size: 16px;
+}
+
+.screen__playlist-icon-box i:nth-child(1),
+.screen__playlist-icon-box i:nth-child(5) {
+    color: lightgray;
+}
+
+.playlist__circle {
+    width: 58px;
+    height: 58px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.playlist__circle i {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    color: white;
+}
