@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="500" height="300" id="area">
+    </canvas>
+    <script>
+        var canvas = document.getElementById("area");
+        if(canvas.getContext) {
+            var draw = canvas.getContext("2d");
+            draw.translate(250, 150);
+            for(i=0; i < 10; i++){
+                draw.save();
+                draw.fillStyle = "rgba(0,0,0,1.0)";
+                draw.globalAlpha = 1 - (0.1 * i);
+                draw.rotate((Math.PI/180) * (i * 36));
+                draw.fillRect(0, 0, 50, 100);
+                draw.restore();
+            }
+        } else {
+            alert("can't use canvas")
+        }
+    </script>
+</body>
+</html>

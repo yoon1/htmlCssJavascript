@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+        }
+        
+        button {
+            all: unset;
+            background-color: steelblue;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal {
+            position: fixed;
+            background-color: white;    
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .modal__overlay {
+            background-color: rgba(0,0,0,0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .modal__content {
+            background-color: white;
+            padding: 50px 10px;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            position: relative;
+            border-radius: 10px;
+            width: 40%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            
+        }        
+
+        .modal__list {
+            height: 150px;
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        .modal__content h1 {
+            margin: 0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="open">Open Modal</button>
+    <div class="modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <h1>I`m a modal</h1>
+            <div class="modal__list"> 
+                <ul>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                    <li>내용</li>
+                </ul>
+            </div>
+            <button>❌</button>
+        </div>
+    </div>
+    <!-- Script -->
+    <script> 
+            const openButton = document.getElementById("open");
+            const modal = document.querySelector(".modal");
+            const overlay = modal.querySelector(".modal__overlay");
+            const closeBtn = modal.querySelector("button");
+        const openModal = () => {
+            modal.classList.remove("hidden");
+        }
+        const closeModal = () => {
+            modal.classList.add("hidden");
+        }
+        overlay.addEventListener("click", closeModal);
+        closeBtn.addEventListener("click", closeModal);
+        openButton.addEventListener("click", openModal);
+    </script>
+</body>
+
+</html>

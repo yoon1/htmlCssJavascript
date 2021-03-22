@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text_add"/>
+    <input type="button" id="btn_remove" onclick="action_add()" value="추가" />
+    <input type="text" id="text_remove"/>
+    <input type="button" id="btn_remove" onclick="action_remove()" value="삭제" />
+    <ul id="ul_list">
+        <li id="li_1">사과</li>
+        <li id="li_2">바나나</li>
+        <li id="li_3">딸기</li>
+        <li id="li_4">망고</li>
+    </ul>
+    
+    <script>
+        function action_add(){
+            var text_add = $("#text_add").val(); //입력할 글씨
+            var ul_list = $("#ul_list"); //ul_list선언
+            ul_list.append("<li>"+text_add+"</li>"); //ul_list안쪽에 li추가
+        }
+
+
+        function action_remove(){
+            var text_remove = $("#text_remove").val(); //삭제할 li태그의 id값 가져오기
+            $("#"+text_remove).remove(); //해당id의 li태그 삭제하기
+        }
+    </script>
+</body>
+</html>
