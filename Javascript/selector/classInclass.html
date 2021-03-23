@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="goods__li point" data-id="1">
+            <div class="goods__item">
+                <div class="goods__item-left">
+                    <div class="goods__image">
+                        <img src="">
+                    </div>
+                    <div class="goods__detail">
+                        <div class="goods__name">호랑이</div>
+                        <div class="goods__category">동물</div>
+                    </div>
+                </div>
+                <div class="goods__item-right">
+                    <div class="goods__price">10000</div>
+                </div>
+            </div>
+        </li>
+        <li class="goods__li point" data-id="2">
+            <div class="goods__item">
+                <div class="goods__item-left">
+                    <div class="goods__image">
+                        <img src="">
+                    </div>
+                    <div class="goods__detail">
+                        <div class="goods__name">사자</div>
+                        <div class="goods__category">동물</div>
+                    </div>
+                </div>
+                <div class="goods__item-right">
+                    <div class="goods__price">15000</div>
+                </div>
+            </div>
+        </li>
+        <li class="goods__li point" data-id="3">
+            <div class="goods__item">
+                <div class="goods__item-left">
+                    <div class="goods__image">
+                        <img src="">
+                    </div>
+                    <div class="goods__detail">
+                        <div class="goods__name">뽀또</div>
+                        <div class="goods__category">과자</div>
+                    </div>
+                </div>
+                <div class="goods__item-right">
+                    <div class="goods__price">10</div>
+                </div>
+            </div>
+        </li>                
+    </ul>
+    
+    <ul class="checklist">
+        <h1>CHECK LIST</h1>
+        
+    </ul>
+    <!-- Script -->
+    <script>
+        $('.goods__li').click(function(e) {
+            const dataId = $(this).attr('data-id');
+            const checklist = $('.checklist');
+            let existsId = false;
+
+            $('.checklist li').each(function() {
+                if($(this).attr('data-id') == dataId) {
+                    existsId = $(this);
+                }
+            });
+            
+            if(existsId){
+                existsId.remove();
+            } else {
+                checklist.append($(this).clone());
+            }
+        });
+    </script>
+</body>
+</html>
