@@ -8,28 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="text_add"/>
-    <input type="button" id="btn_remove" onclick="action_add()" value="추가" />
-    <input type="text" id="text_remove"/>
-    <input type="button" id="btn_remove" onclick="action_remove()" value="삭제" />
+
     <ul id="ul_list">
-        <li id="li_1">사과</li>
-        <li id="li_2">바나나</li>
-        <li id="li_3">딸기</li>
-        <li id="li_4">망고</li>
+        <li data-id="li_1">사과
+            <input type="button" onclick="action_move(1)" value="이동" />
+        </li>
+        <li data-id="li_2">바나나
+            <input type="button" onclick="action_move(2)" value="이동" />
+        </li>
+        <li data-id="li_3">딸기
+            <input type="button" onclick="action_move(3)" value="이동" />
+        </li>
+        <li data-id="li_4">망고
+            <input type="button" onclick="action_move(4)" value="이동" />
+        </li>
     </ul>
+
+    <ul id="ul_list2">
+
+    </ul>    
     
     <script>
-        function action_add(){
-            var text_add = $("#text_add").val(); //입력할 글씨
-            var ul_list = $("#ul_list"); //ul_list선언
-            ul_list.append("<li>"+text_add+"</li>"); //ul_list안쪽에 li추가
-        }
-
-
-        function action_remove(){
-            var text_remove = $("#text_remove").val(); //삭제할 li태그의 id값 가져오기
-            $("#"+text_remove).remove(); //해당id의 li태그 삭제하기
+        // 장바구니 담기 / 빼기 
+        function action_move(e){
+            const dataId = $('[data-id="li_' + e + '"]');
+            const ul_list1 = $('#ul_list');
+            const target = ul_list1.find(dataId).clone();
+            const ul_list2 = $('#ul_list2');
+            const existsYn = (ul_list2.find(dataId).length > 0) ? true : false;
+            
+            if(existsYn) {
+                ul_list2.find(dataId).remove();
+            } else {
+                ul_list2.append(target);
+            }
         }
     </script>
 </body>
